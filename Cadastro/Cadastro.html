@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Cadastro.css">
+    <title>VIVER BEM</title>
+</head>
+<body>
+   
+
+
+    <header>
+        <a href="#"class="logo">VIVER<spam> BEM</spam></a>
+        <div class="menuToggle" onclick="menuToggle();"></div>
+        <ul class="navigation">
+            <li><a href="../index.html" onclick="menuToggle();" id="login">Login</a></li>
+            <li><a href="#" onclick="menuToggle();" id="cadastro">Cadastro</a></li>
+            
+        </ul><!--navigation-->
+    </header>
+
+    <section>
+        <div class="box">
+            <div class="box1">
+                <div class="text">
+                    <h2>CADASTRO</h2>
+                    <p>FAÇA CADASTRO PARA CONTINUAR NAVEGANDO!</p>
+                
+                 <input type="text" placeholder="EmailIdoso@gmail.com" id="email" required></input>
+                 <input type="text" placeholder="CPF do Idoso" id="cpf" required></input>
+                 <input type="password" placeholder="Senha" id="senha" required></input>
+                 <input type="file" title ="Foto do Idoso" id="idoso" accept="image/jpg, image/png" required/></input>
+                    
+                 <p id="foto">Foto do Idoso</p>
+                    <div class="fotoI" id ="imageI"></div>
+                 
+                 
+                    <a id="button" href="../Cadastro tutor/Tutor.html" type="submit">CONTINUAR</a>
+
+                </div><!--text-->
+            </div>
+            <div class="box2">
+                <div class="boll">
+                    <div class="boll1">
+                        <img src="../img/hug.png" alt="">
+                    </div>
+                </div><!--bool-->
+            </div><!--box2-->
+        </div><!--box-->
+
+    </section>
+
+    <script src="../js.js"></script>
+</body>
+</html>

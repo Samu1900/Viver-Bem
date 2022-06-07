@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+    background: #F5F5F5;
+}
+
+
+/*Header*/
+header{
+    top:0;
+    left:0;
+    width:100%;
+    padding:40px 190px;
+    z-index: 10000;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+header img{
+    position: absolute;
+    
+}
+header .logo{
+    
+    color: #111;
+    font-weight: 700;
+    font-size:2em;
+    text-decoration: none;
+}
+
+
+header .logo spam{
+    color: #5ea081;
+}
+
+header .navigation{
+    position:relative;
+    display:flex;
+
+}
+
+header .navigation li{
+    list-style: none;
+    margin-left:30px;
+}
+
+.navigation li #login {
+    text-decoration: none;
+    font-weight: 800;
+    color:#5ea081;
+
+}
+
+.navigation li a {
+    text-decoration: none;
+    color:#111;
+    font-weight: 300;
+}
+
+
+/*Formulario Login*/
+section .box{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+
+}
+
+.box1{
+    width: 400px;
+   
+    height: 500px;
+    background: #E9E9E9;
+   
+}
+
+
+.text{
+    position: absolute;
+}
+
+.text, .text h2,
+.text input,.text p{
+    background: #E9E9E9;
+    color: #666666;
+}
+
+.text h2{
+    margin-left:40px;
+    margin-top: 35%;
+
+}
+.text p{
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left:40px;
+}
+
+.text input{ 
+    display: flex;
+    border: none;
+    outline: none;
+    width: 300px; 
+    margin-left:40px;
+    margin-top: 15%;
+    border-bottom: 2px solid #5ea081; 
+} 
+
+.text input::placeholder{
+    padding-left: 5px;
+}
+
+#email::placeholder{
+    color: #3D951D;
+    
+}
+
+
+#button {
+    width: 300px; 
+    height: 59px;
+    padding:0;
+    cursor: pointer;
+    margin-left:40px;
+    margin-top: 15%;
+
+    
+    border: none;
+    border-radius:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    background:linear-gradient(269.37deg, rgba(0, 172, 90, 0.34) 0.55%, rgba(0, 179, 93, 0.42) 0.56%, #01A959 100%);;
+    color: #fff;
+    
+}
+
+.text a{
+    position: absolute;
+    text-decoration: none;
+
+    font-size:12px;
+    padding-left:220px;
+
+    background: #E9E9E9;
+    color: #666666;
+
+}
+
+
+/*Formulario Imagem*/
+
+.box2{
+        border-radius: 10px;
+        width: 400px;
+        height: 500px;
+        background: linear-gradient(180deg, rgba(0, 172, 90, 0.34) 0%, #01A959 100%);
+        border-radius: 0px 10px 10px 0px;
+}
+
+.box2 .boll{
+    
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top:25%; 
+    margin-left:12%;
+    background:linear-gradient(0deg, rgba(153, 212, 184, 0.24), rgba(153, 212, 184)), rgba(149, 211, 181);
+}
+
+.box2 .boll1{
+    position:absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    
+    margin-top:45px; 
+    margin-left:50px;
+    background:linear-gradient(0deg, rgba(46, 119, 84, 0.24), rgba(149, 211, 181, 0.24)), rgba(149, 211, 181, 0.24);;
+}
+
+.box2 .boll1 img{
+    position:relative;
+    width: 300px;
+    background:none;
+
+    padding-right:100px ;
+}
+
+
+/*Responsivo*/
+@media (max-width:794px) {
+
+    .box1 {
+        margin-top: 81px;
+    }
+    .box2{
+       display:none;
+}
+}
+
+@media (max-width:769px) {
+
+    header{
+   
+        padding: 40px 52px;
+      
+    } 
+    
+    
+}
+
+@media (max-width:397px){
+.box1 {
+    width: 319px;
+    height: 442px;
+    background: #E9E9E9;
+}
+
+.text h2 {
+    margin-left: 22px;
+
+    }
+
+    .text p {
+        
+        margin-left: 22px;
+    }
+
+    .text input {
+        
+        width: 235px;
+        margin-left: 49px;
+    }
+
+    .text a {
+    
+       
+        padding-left: 187px;
+    }
+
+    .text button {
+        width: 222px;
+        height: 59px;
+        margin-left: 54px;
+    }
+}

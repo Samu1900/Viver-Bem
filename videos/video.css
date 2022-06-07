@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+   
+
+}
+
+
+
+
+
+/*Header*/
+header{
+    top:0;
+    left:0;
+    width:100%;
+    padding:40px 190px;
+    z-index: 10000;
+    display:flex;
+    
+    justify-content:space-between;
+    align-items: center;
+
+    
+}
+
+header .logo{
+    
+    color: #111;
+    font-weight: 700;
+    font-size:2em;
+    text-decoration: none;
+}
+
+
+header .logo spam{
+    color: #5ea081;
+}
+
+header .mic{
+    width: 9vh;
+    height: 9vh;
+
+    border-radius: 50%;
+    background: #99D4B8;
+    
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+
+    align-items: center; 
+    display: flex;
+   
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+header .mic img{
+    height:50px;
+    width: 50px;
+
+    cursor: pointer;
+    
+}
+
+
+.cont, .alert{
+    display: flex;
+    
+    justify-content: center;
+   
+    width:100%;
+    height: 100%;
+    
+}
+
+.boxcont,.box-alert{
+    width:200px;
+    height:200px;
+    
+    background: linear-gradient(0deg, rgba(153, 212, 184, 0.24), rgba(153, 212, 184, 0.24)), rgba(149, 211, 181, 0.24);;
+    box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+
+    justify-content: center;
+    align-items: center; 
+    
+    display: flex;
+   
+}
+
+.icon img, .img-alert img{
+    width: 100px;
+}
+
+.box-alert{
+margin-top:100px;
+cursor: pointer;
+}
+
+
+
+.td{
+    display: flex;
+    
+    justify-content: center;
+    width:100%;
+    height:auto;
+}
+.box{
+    width: 400px;
+    height: 100%;
+    margin-left:20px
+}
+.play img{
+    margin-top: 120px;
+    width:100%;
+    height:220px;
+    border-radius: 10px;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 800;
+    color: #111;
+    
+}
+
+.trailer, .trailer2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 10000;
+    background:rgba(0,0,0,0.95);
+    width: 100%;
+    height:100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    visibility: hidden;
+    opacity:0;
+ }
+
+.trailer.active, .trailer2.active {
+    visibility: visible;
+    opacity:1;
+}
+
+.trailer video,.trailer2 video{
+    max-width:900px;
+    outline:none;
+}
+
+.trailer .close,.trailer2 .close{
+    position:absolute;
+    top: 30px;
+    right:30px;
+    cursor:pointer;
+    filter: invert(1);
+    max-width: 32px;
+}
+
+@media (max-width: 1200px){
+    
+    .trailer video, .trailer2 video{
+        max-width:90%;
+        outline:none;
+    }
+    .td {
+        display: grid;
+    }
+    
+    header {
+     
+        padding: 40px 21px;
+    }
+}
